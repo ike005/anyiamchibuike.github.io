@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Open Sans', sans-serif;
+                background-color: #f5f5f5;
+                color: black;
+            }
+            #container1  {
+                width: 100%;
+                height: 60px;
+                background-color: black;
+                color: white;
+                text-align: center;
+                position: fixed;
+                text-decoration: none;
+            }
+
+            #container1 > h3 a{
+                color: white;
+                text-decoration: none;
+            }
+
+            #container1 > h3 a:hover {
+                color: burlywood;
+            }
+
+            .back-to-top a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .back-to-top a:hover{
+                color: burlywood;
+            }
+
+            .navbar {
+                margin-left: 20px;
+            }
+
+            .top {
+                width: 100%;
+                height: 110vh;
+                background-color: burlywood;
+            }
+
+            .profilepic {
+                width: 350px;
+                height: 350px;
+                display: inline-block;
+                border-radius: 50%;
+                margin-top: 200px;
+                margin-left: 150px;
+            }
+
+            .details {
+                height:fit-content;
+                width: 400px;
+                float: right;
+                margin-top: 190px;
+                margin-right: 300px;
+                text-align:left;
+            }
+
+            .details > div {
+                background-color: black;
+                text-align: center;
+                padding: 2px;
+                border-radius: 20px;
+            }
+
+            .resume a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .resume a:hover {
+                color: burlywood;
+            }
+
+            .about {
+                text-align: center;
+                width: 800px;
+                height: 200px;
+                padding-top: 50px;
+                margin-left: 220px;
+                font-size: larger;
+            }
+
+            #about {
+                width: 100%;
+                height: 80vh;
+                background-color: whitesmoke;
+
+                padding: 100px;
+            }
+
+            .skill {
+                text-align: center;
+            }
+
+            .html, .css, .javascript {
+                height: 100px;
+                width: 200px;
+                background-color: black;
+                color:white;
+                text-align: center;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            .css {
+                margin-left: 50px;
+            }
+
+            .javascript {
+                margin-left: 50px;
+            }
+
+            .rating { 
+                font-size: smaller;
+            }
+
+            .lang {
+                font-size: 30px;
+                margin: 15px;
+            }
+
+            footer > div {
+                height: 100px;
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding-top: 40px;
+            }
+
+            #contact div {
+                width:500px;
+                height: 300px;
+                background-color: burlywood;
+                margin-top: 80px;
+                margin-left: 360px;
+                margin-bottom: 80px;
+                padding-top: 50px;
+                padding-left: 50px;
+                border-radius: 10px;
+
+            }
+
+            @media  (max-width: 991.98px) {
+            .profilepic {
+                width: 250px;
+                height: 250px;
+                margin: 20px auto;
+                display: block;
+            }
+
+            .details {
+                width: 90%;
+                margin: 20px auto;
+                text-align: center;
+            }
+
+            .about {
+                width: 90%;
+                margin: 20px auto;
+                font-size: larger;
+            }
+
+            #contact div {
+                width: 90%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            .html, .css, .javascript {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+           
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div id="container1">
+                <h3><a href="#about">ABOUT</a><span class="navbar"><a href="#skills">SKILLS</a></span> <span class="navbar"><a href="#contact">CONTACT</a></span></h3>
+            </div>
+        </header>
+        <section id="top">
+            <div class="top">
+                <img class="profilepic" src="./portfolio pic.jpg">
+                <div class="details">
+                    <h1>Hi, i'm <span style=" font-weight: bolder;">CHIBUIKE EVERTON ANYIAM</span></h1>
+                    <h2>Frontend Web Developer</h2>
+                    <div>
+                        <p class="resume"><a href="./Profile.pdf">RESUME</a> </p>
+                    </div>
+                </div>
+            </div>
+        </section id=top>
+        <section id="about">
+            <div class="about">
+                <h1>About Me</h1>
+                <p>I am currently majoring in Computer Science as a freshman at Ball
+                    State University. I am a confident, ambitious, and hard-working
+                    person. I am highly motivated, creative, and
+                    enjoy learning new skills. I enjoy collaborating with others and fixing
+                    problems. My hobbies include playing games and watching anime.
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skill">
+                <h1>Skills</h1>
+                <div class="html">
+                    <div><h4 class="lang">HTML</h4></div><hr>
+                    <div><h3 class="rating">INTERMEDIATE</h3></div>
+                </div>
+                <div class="css">
+                    <div><h4 class="lang">CSS</h4></div><hr>
+                    <div><h3 class="rating">INTERMEDIATE</h3></div>
+                </div>
+                <div class="javascript">
+                    <div><h4 class="lang">JAVASCRIPT</h4></div><hr>
+                    <div><h3 class="rating">BEGINNER</h3></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h1>Contact Me</h1>
+                <p>Phone: +1 240-9238-823</p>
+                <p>Email: anyiamchibuike3@gmail.com</p>
+                <p>LinkedIn: linkedin.com/in/anyiam-chibuike-643251269</p>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p>&copy; 2024 CHIBUIKE EVERTON ANYIAM</p>
+                <P class="back-to-top"><a href="#top">Back To Top</a> </P>
+            </div>
+        </footer>
+    </body>
+</html>
